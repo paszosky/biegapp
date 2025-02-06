@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="pl" class="h-full bg-gray-100">
-<head>
-    <meta charset="UTF-8">
-    <title>BiegApp</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="h-full">
-    
-    <div class="min-h-full">
+<?php require('partials/head.php'); ?>
     
     <?php require('partials/nav.php'); ?>
 
@@ -21,7 +12,5 @@
             <p>Hello to BiegApp. Contact page</p>
         </div>
     </main>
-    </div>
 
-</body>
-</html>
+<?php require('partials/footer.php'); ?>
