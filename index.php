@@ -1,8 +1,12 @@
 <?php
+
 require 'functions.php';
 
-$heading = 'Home';
+// dd($_SERVER);
 
+$uri = $_SERVER['REQUEST_URI'];
 
+if ($uri === '/biegapp/') {
+    require 'controllers/index.php';
+}
 
-require "views/index.view.php";
