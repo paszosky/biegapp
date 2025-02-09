@@ -8,6 +8,8 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 $routes = [
     '/biegapp/' => 'controllers/index.php',
     '/biegapp/about' => 'controllers/about.php',
+    '/biegapp/notes' => 'controllers/notes.php',
+    '/biegapp/note' => 'controllers/note.php',
     '/biegapp/contact' => 'controllers/contact.php',
 ];
 
