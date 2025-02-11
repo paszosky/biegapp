@@ -1,19 +1,6 @@
 <?php
 
-$uri = parse_url($_SERVER['REQUEST_URI'])['path'];
-
-// dd($uri);
-
-
-$routes = [
-    '/biegapp/' => 'controllers/index.php',
-    '/biegapp/about' => 'controllers/about.php',
-    '/biegapp/notes' => 'controllers/notes.php',
-    '/biegapp/note' => 'controllers/note.php',
-    '/biegapp/contact' => 'controllers/contact.php',
-];
-
-
+$routes = require('routes.php');
 
 function routeToController($uri, $routes) {
     if (array_key_exists($uri, $routes)) {
@@ -28,5 +15,7 @@ function abort($code = 404) {
     require "views/{$code}.php";
     die();
 }
+
+$uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
 routeToController($uri, $routes);
