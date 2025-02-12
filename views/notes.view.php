@@ -9,7 +9,7 @@
             <?php foreach ($notes as $note) : ?>
                 <li>
                     <a href="/biegapp/note?id=<?= $note['id'] ?>" class="text-blue-500 hover:underline">
-                        <?= $note['body'] ?></li>
+                        <?= htmlspecialchars($note['body']) ?></li>
                     </a>
             <?php endforeach; ?>
         </ul>

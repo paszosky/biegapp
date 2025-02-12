@@ -8,7 +8,7 @@
             <a href="/biegapp/notes" class="text-blue-900 underline">Go back...</a>
         </p>
         <p>
-            <?= $note['body'] ?>
+            <?= htmlspecialchars($note['body']) ?>
         </p>
     </div>
 </main>
