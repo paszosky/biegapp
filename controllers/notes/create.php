@@ -8,7 +8,7 @@ $db = new Database($config['database']);
 
 $heading = "Create note";
 
-dd(Validator::email('pasza@mail.pl'));
+// dd(Validator::email('pasza@mail.pl'));
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     

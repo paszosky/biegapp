@@ -1,10 +1,10 @@
 <?php
 
 return [
-    '/biegapp/' => 'controllers/index.php',
-    '/biegapp/about' => 'controllers/about.php',
-    '/biegapp/notes' => 'controllers/notes/index.php',
-    '/biegapp/note' => 'controllers/notes/show.php',
-    '/biegapp/notes/create' => 'controllers/notes/create.php',
-    '/biegapp/contact' => 'controllers/contact.php',
+    '/' => 'controllers/index.php',
+    '/about' => 'controllers/about.php',
+    '/notes' => 'controllers/notes/index.php',
+    '/note' => 'controllers/notes/show.php',
+    '/notes/create' => 'controllers/notes/create.php',
+    '/contact' => 'controllers/contact.php',
 ];
