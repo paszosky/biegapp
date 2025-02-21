@@ -21,3 +21,6 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 $method = $_POST['_method'] ?? $_SERVER['REQUEST_METHOD']; //isset $_POST['_method']
 
 $router->route($uri, $method);
+
+// add sites
+// view for note
