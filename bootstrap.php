@@ -13,6 +13,6 @@ $container->bind('Core\Database', function() {
 
 $db = $container->resolve('Core\Database');
 
-dd($db);
+// $container->resolve('asdafasdf');
 
 // $db = $container->resolve('Core\Database');
